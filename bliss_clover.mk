@@ -28,8 +28,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common bliss stuff
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/clover/device.mk)
@@ -38,13 +38,16 @@ $(call inherit-product, device/xiaomi/clover/device.mk)
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="clover-user 8.1.0 OPM1.171019.019 9.7.4 release-keys"
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1200
+
 # Build Fingerprint
 BUILD_FINGERPRINT := "xiaomi/wayne/wayne:8.1.0/OPM1.171019.011/V9.5.11.0.ODCCNFA:user/release-keys"
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_clover
+PRODUCT_NAME := bliss_clover
 PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_DEVICE := clover
 PRODUCT_MODEL := MI PAD 4
