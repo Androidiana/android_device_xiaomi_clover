@@ -7,9 +7,9 @@
   },
   {
     "remote":      "github",
-    "repository":  "Androidiana/android_kernel_xiaomi_sdm660_southwest",
+    "repository":  "xiaomi-sdm660/android_kernel_xiaomi_sdm660",
     "target_path": "kernel/xiaomi/clover",
-    "branch":      "11.0-eas-wifi-r"
+    "branch":      "11-EAS"
   },
   {
     "remote":      "github",
